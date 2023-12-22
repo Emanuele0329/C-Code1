@@ -1,0 +1,12 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+
+
+//int main()
+//{
+//	printf("hello world");
+//	printf("±»Ãÿ\n");
+//	return 0;
+//}
+
+k
