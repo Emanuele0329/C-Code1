@@ -185,7 +185,7 @@ int main()
 	//加入密码是一个字符串
 	char password[20] = { 0 };
 	printf("请输入密码:>");
-	scanf("%s", password);//123456
+	scanf("%s", &password);//123456
 
 	//getchar();//不完全解决办法 加一个getchar()把\n拿掉，一旦加一个空格就又错误了
 
@@ -207,3 +207,25 @@ int main()
 	}
 	return 0;
 }
+
+int main()
+{
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	//sizeof(arr)计算的是数组的总大小，单位是字节
+	//sizeof(arr[0])计算的是数组元素的大小       得出的结果是数组的个数
+	float f = 0.0;//0.0会被默认当成double类型，应写成0.0f
+	printf("%.2f");//.2f是保留小数点后两位
+	//%c打印的是ASCII码对应的字符
+	//20000301
+	int year = 0;
+	int month = 0;
+	int day = 0;
+	scanf("%4d%2d%2d", &year, % month, &day);//读出的结果2000 03 01
+	printf("month=%02d\n", month);//%02d的意思是2位的数如果只有一位0补上，例，03
+
+	int n = printf("Hello world!");
+	printf("%d\n", n);//Hello world!12,如果想让12挪到下一行，\n%d\n  (12是返回值)
+
+	return 0;
+}
+
